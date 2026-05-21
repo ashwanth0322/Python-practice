@@ -1,0 +1,20 @@
+subjects=int(input("Enter the number of subjects :"))
+
+total=0
+
+for i in range(subjects):
+    subject_name=input("Enter the name of the subject :")
+    marks=int(input("Enter the the mark :"))
+
+    total+=marks
+
+average=total/subjects
+
+if average > 90:
+    print("Grade = O")
+elif average > 80:
+    print("Grade = A")
+elif average > 70:
+    print("Grade = B")
+else:
+    print("fail")
